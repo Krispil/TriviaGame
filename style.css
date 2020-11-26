@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20;
+    size: 20;
+ 
+}
+.contener{
+  width: 500px;
+  height: 500px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+    background-color: aqua;
+    text-align: center;
+    
+}
+select{
+    
+}
+#life{
+  
+  font-size: x-large;
+}
+#div_body_game_t-f{
+  font-size: larger;
+}

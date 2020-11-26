@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Those are imports and defentions you should not edit  -->
+
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title></title> <!-- You can enter the application title here -->
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="style.css">
+    <!--the reference to your Css should be inserted here -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/f24533ba21.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Jquery you should not edit -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="Script.js"> </script>
+    <!--the reference to your JavaScript code should be inserted here under src -->
+
+</head>
+
+<body id='body'>
+
+
+    <div class="btn btn-primary btn-sm btn-block" id='divM'>
+
+        <h1>Triva Game</h1>
+        <p>Select a game style and</p>
+        <p>category difficulty level and then click Start</p>
+        <p>Each correct question earns ten points</p>
+        <p>Wrong answer and you lose one <span class="glyphicon glyphicon-heart" style="color: red;"></span></p>
+
+        <label for="">
+            <p>Select a difficulty level</p>
+            <button class="btn btn-default" onclick="Getdifficulty('easy')" id="easy">easy</button>
+            <button class="btn btn-default" onclick="Getdifficulty('medium')" id="medium">medium</button>
+            <button class="btn btn-default" onclick="Getdifficulty('hard')" id="hard">hard</button>
+        </label>
+        <br>
+        <label for="">
+            <p>Select a type game</p>
+            <button class="btn btn-default" onclick="GetTypeGame('bt-4')" id="bt-4">4 choice</button>
+            <button class="btn btn-default" onclick="GetTypeGame('bt-tf')" id="bt-tf">True|False</button>
+        </label>
+        <br>
+        <label for="categories" id="labCat"> Select a category: <br>
+            <select class="btn btn-default" name="categories" id="categories">
+                <option value="defult">Select</option>
+            </select>
+            <br><br>
+            <button class="btn btn-success" onclick='start()'>Ready</button>
+        </label>
+    </div>
+
+
+</body>
+
+</html>
